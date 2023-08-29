@@ -24,7 +24,7 @@ console.log('Toughness:', toughness);
 const pythonScriptPath = path.join(__dirname, 'Exam_prediction.py');
 
   
-  const ExamProcess = spawn('venv/bin/python', [pythonScriptPath, toughness, hour, consist, syllabus, time]);
+  const ExamProcess = spawn('python', [pythonScriptPath, toughness, hour, consist, syllabus, time]);
   
 
 ExamProcess.stdout.on('data',(data)=>{
