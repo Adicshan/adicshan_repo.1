@@ -6,6 +6,12 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
 
+pandas_path = '/opt/render/.local/lib/python3.7/site-packages'
+sklearn_path = '/opt/render/.local/lib/python3.7/site-packages'
+sys.path.append(pandas_path)
+sys.path.append(sklearn_path)
+
+
 file_path = os.path.dirname(os.path.abspath(__file__))
 csv_path = os.path.join(file_path, 'Exam_data.csv')
 df = pd.read_csv(csv_path)
