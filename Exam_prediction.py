@@ -1,7 +1,11 @@
 import os
 import sys
-print("Python version")
-print(sys.version)
+
+
+pandas_path = '/opt/render/.local/lib/python3.7/site-packages'
+sklearn_path = '/opt/render/.local/lib/python3.7/site-packages'
+sys.path.append(pandas_path)
+sys.path.append(sklearn_path)
 import math
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
@@ -9,11 +13,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
 
 
-
-pandas_path = '/opt/render/.local/lib/python3.7/site-packages'
-sklearn_path = '/opt/render/.local/lib/python3.7/site-packages'
-sys.path.append(pandas_path)
-sys.path.append(sklearn_path)
 
 
 file_path = os.path.dirname(os.path.abspath(__file__))
