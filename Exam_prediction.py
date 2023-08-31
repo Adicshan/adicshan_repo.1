@@ -13,8 +13,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
 
 
-
-
 file_path = os.path.dirname(os.path.abspath(__file__))
 csv_path = os.path.join(file_path, 'Exam_data.csv')
 df = pd.read_csv(csv_path)
