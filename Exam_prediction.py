@@ -8,7 +8,6 @@ sys.path.append(sklearn_path)
 # Print sys.path to verify that the paths are added correctly
 print(sys.path)
 
-
 import math
 import /opt/render/.local/lib/python3.7/site-packages.pandas as pd
 from sklearn.linear_model import LogisticRegression
