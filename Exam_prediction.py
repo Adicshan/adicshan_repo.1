@@ -1,7 +1,5 @@
 import os
 import sys
-
-
 pandas_path = '/opt/render/.local/lib/python3.7/site-packages'
 sklearn_path = '/opt/render/.local/lib/python3.7/site-packages'
 sys.path.append(pandas_path)
