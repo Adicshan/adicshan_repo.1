@@ -6,6 +6,23 @@ pandas_path = '/opt/render/.local/lib/python3.7/site-packages'
 sklearn_path = '/opt/render/.local/lib/python3.7/site-packages'
 sys.path.append(pandas_path)
 sys.path.append(sklearn_path)
+
+# Print sys.path to verify that the paths are added correctly
+print(sys.path)
+
+# Try importing pandas
+try:
+    import pandas as pd
+    print("pandas imported successfully")
+except ImportError:
+    print("Failed to import pandas")
+
+# Try importing scikit-learn
+try:
+    import sklearn
+    print("scikit-learn imported successfully")
+except ImportError:
+    print("Failed to import scikit-learn")
 import math
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
