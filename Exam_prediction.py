@@ -8,21 +8,9 @@ sys.path.append(sklearn_path)
 # Print sys.path to verify that the paths are added correctly
 print(sys.path)
 
-# Try importing pandas
-try:
-    import pandas as pd
-    print("pandas imported successfully")
-except ImportError:
-    print("Failed to import pandas")
 
-# Try importing scikit-learn
-try:
-    import sklearn
-    print("scikit-learn imported successfully")
-except ImportError:
-    print("Failed to import scikit-learn")
 import math
-import pandas as pd
+import /opt/render/.local/lib/python3.7/site-packages.pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
