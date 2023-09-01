@@ -1,6 +1,6 @@
 import os
 import sys
-pandas_path = '/opt/render/.local/lib/python3.7/site-packages'
+pandas_path = '/opt/render/.local/lib/python3.7/site-packages/pandas/__init__.py'
 sklearn_path = '/opt/render/.local/lib/python3.7/site-packages'
 sys.path.append(pandas_path)
 sys.path.append(sklearn_path)
