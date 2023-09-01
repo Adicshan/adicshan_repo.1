@@ -9,7 +9,7 @@ sys.path.append(sklearn_path)
 print(sys.path)
 
 import math
-import /opt/render/.local/lib/python3.7/site-packages.pandas as pd
+import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
