@@ -6,7 +6,6 @@ sys.path.append(pandas_path)
 sys.path.append(sklearn_path)
 python_version=sys.version
 print(python_version)
-# Print sys.path to verify that the paths are added correctly
 print(sys.path)
 import math
 import pandas as pd
