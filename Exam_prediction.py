@@ -1,15 +1,14 @@
 import os
 import sys
-import importlib
 
-# Define the phe directory where pandas is installed
-pandas_path = '/opt/render/.local/lib/python3.7/site-packages'
+# Get the directory where pandas is installed
+pandas_path = os.path.dirname(os.path.realpath(__import__('pandas').__file__))
 
 # Add the pandas path to the sys.path list
 sys.path.append(pandas_path)
 
-# Import pandas using importlib
-pandas_module = importlib.import_module('pandas')
+# Import pandas
+import pandas as pd
 import math
 #import pandas as pd
 from sklearn.linear_model import LogisticRegression
