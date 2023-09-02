@@ -2,7 +2,7 @@ import os
 import sys
 import importlib
 
-# Define the path to the directory where pandas is installed
+# Define the phe directory where pandas is installed
 pandas_path = '/opt/render/.local/lib/python3.7/site-packages'
 
 # Add the pandas path to the sys.path list
