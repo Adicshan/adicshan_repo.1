@@ -6,7 +6,6 @@ pandas_path = os.path.dirname(os.path.realpath(__import__('pandas').__file__))
 
 # Add the pandas path to the sys.path list
 sys.path.append(pandas_path)
-
 # Import pandas
 import pandas as pd
 import math
