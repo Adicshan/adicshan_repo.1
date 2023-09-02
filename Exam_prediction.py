@@ -1,14 +1,17 @@
 import os
 import sys
-pandas_path = '/opt/render/.local/lib/python3.7/site-packages/pandas/__init__.py'
-sklearn_path = '/opt/render/.local/lib/python3.7/site-packages'
+import importlib
+
+# Define the path to the directory where pandas is installed
+pandas_path = '/opt/render/.local/lib/python3.7/site-packages'
+
+# Add the pandas path to the sys.path list
 sys.path.append(pandas_path)
-sys.path.append(sklearn_path)
-python_version=sys.version
-print(python_version)
-print(sys.path)
+
+# Import pandas using importlib
+pandas_module = importlib.import_module('pandas')
 import math
-import pandas as pd
+#import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
